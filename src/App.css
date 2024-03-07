@@ -1,0 +1,174 @@
+/*                      */
+/*        Reset         */
+/*                      */
+
+/* Box sizing */
+
+*,
+*::after,
+*:before {
+	box-sizing: border-box;
+}
+
+/* Reset margins */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+	margin: 0;
+}
+
+body {
+	background-color: rgb(11, 11, 11);
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: white;
+}
+
+/* Set up the body */
+
+body {
+	line-height: 1.5;
+	min-height: 100vh;
+	color: white;
+}
+
+/* make images easier to work with */
+
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* make form elements easier to work with  */
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* remove animation for people who've turned them off */
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01 !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01 !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+.app {
+	max-width: 500px;
+	min-height: 100vh;
+	margin: 0 auto;
+	padding: 1rem;
+	background-color: rgb(47, 47, 47);
+	color: white;
+}
+
+/* Notes component */
+
+.notes-container {
+	padding: 1rem;
+}
+
+.notes-header,
+.create-note-header,
+.edit-note-header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+	align-items: center;
+}
+.create-note-header,
+.edit-note-header {
+	margin-top: 1rem;
+}
+
+.note-items {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 1rem;
+	margin-bottom: 2rem;
+}
+
+.note-item {
+	padding: 1rem;
+}
+
+.note-item:hover {
+	background-color: rgb(98, 98, 98);
+}
+
+.plus-button {
+	text-align: right;
+}
+
+.buttons {
+	color: white;
+	background-color: rgb(47, 47, 47);
+	padding: 0.2rem;
+	font-size: 2rem;
+	border: none;
+}
+
+.buttons:hover {
+	cursor: pointer;
+	color: rgb(89, 89, 89);
+}
+
+.search-bar {
+	margin-left: auto;
+}
+
+/* note item component */
+
+.note-item {
+	line-height: 1.8rem;
+}
+
+.note-item-title {
+	border-bottom: 1px solid white;
+}
+
+/* Create note */
+
+.create-note-form,
+.edit-note-form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.input {
+	padding: 0.5rem;
+}
+
+.text-area {
+	max-width: 100%;
+	min-width: 100%;
+}
+
+/* Edit note component */
+
+.back-button {
+	margin-right: auto;
+}
