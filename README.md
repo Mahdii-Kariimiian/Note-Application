@@ -1,8 +1,21 @@
-# React + Vite
+# Note App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple note-taking application built with **React** that allows users to create, edit, and manage their notes efficiently. This app leverages local storage to persist notes, ensuring that they remain available even after the browser is closed.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Create new notes**
+- **Edit existing notes**
+- **View all notes in a list**
+- **Automatically save notes to local storage**
+
+## Technologies Used
+
+- **React**: The core library for building the user interface.
+- **React Router**: For handling routing within the application.
+- **JavaScript (ES6)**: Used for scripting and functionality.
+- **CSS**: For styling the application.
+- **Local Storage**: To persist notes between sessions.
+
+## Screenshot
+![FireShot Capture 073 - Note App - localhost](https://github.com/user-attachments/assets/ffb110af-ae49-4d45-a1da-bd11d5068d14)
